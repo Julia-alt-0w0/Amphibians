@@ -1,0 +1,146 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4e8a65;
+    color: #fff;
+    font-family:'Courier New', Courier;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar p{
+    font-size: 30px;
+    margin-left: -400px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.navbar .logo:hover {
+    transform: scale(1.1);
+}
+
+a:link {
+    color: rgb(243, 239, 11);
+  }
+  
+  a:visited {
+    color: rgb(250, 249, 245);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(6, 22, 16);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(11, 87, 17);
+  }
+
+  
+.nav-links ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.nav-links a:hover {
+    color: #92e5ff;
+    transform: scale(1.1); 
+}
+/* Informação espécie */
+.detalhes-especie {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.especie {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-especie {
+    width: 300
+    px; 
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+main {
+    margin: 0 15vw; 
+    padding: 20px; 
+}
+
+body {
+    color: #333;
+    background-color: #6ba37f;
+    padding-top: 120px; 
+}
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Centraliza os links de paginação */
+    margin-top: 20px; /* Adiciona margem superior */
+}
+
+.pagination a {
+    margin: 0 5px; /* Espaçamento entre os links de paginação */
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
