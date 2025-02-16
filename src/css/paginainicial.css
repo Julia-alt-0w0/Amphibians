@@ -290,3 +290,244 @@ body {
       display: flex;
   }
 }
+/*Cores dos cartõeszinhos */
+.card {
+  background-color: #f5f5f5; /* Cor de fundo do card */
+  border: 2px solid #4CAF50; /* Borda com cor personalizada */
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  padding: 150px;
+}
+
+.card-body {
+  background-color: #ffffff; /* Fundo interno */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 16px;
+  color: #4CAF50; /* Cor do título */
+}
+/*texto dentro do card*/
+.card-body .card-text {
+  font-size: 16px; /* Ajuste o tamanho do texto conforme necessário */
+}
+/*titulo do autor*/
+.card-title {
+  font-size: 30px; /* Ajuste o tamanho do título conforme necessário */
+}
+
+
+.card-text {
+  color: #333; /* Cor do texto */
+}
+
+.btn-primary {
+  background-color: #4CAF50; /* Cor do botão */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+
+/* Redes sociais */ 
+.icons-social-media {
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px;
+  width: 32px;
+  cursor: pointer !important;
+  transition: 300ms all ease-in-out;
+  position: relative;
+}
+
+.icons-social-media:hover {
+  translate: -0px -10px;
+}
+
+#instagram,
+    #youtube,#twitch {
+  transition: 300ms all ease-in-out;
+  clip-path: circle(65%);
+}
+
+#instagram:hover {
+  background-color: rgb(125, 219, 106);
+}
+
+#youtube {
+  height: 40px;
+}
+
+#youtube:hover {
+  background-color: rgb(255, 6, 6);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+.card {
+  width: 100%;
+}
+
+/*formulariozinh0*/ 
+.form-container {
+  width: 400px;
+  background: linear-gradient(#ffffff, #f1f1f1) padding-box,
+              linear-gradient(145deg, transparent 35%,#141414, #020202) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: rgb(61, 53, 53);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+/*fonte dentro do formulario*/
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #64945e;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 5px 6px;/*largura e altura da caixa de email*/
+  border-radius: 6px;
+  color: #000000;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #020202;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 20px 8px; /*largura e altura da caixa de comentário*/
+  border-radius: 8px;
+  resize: none;
+  color: #000000;/*cor da caixa de email*/
+  height: 9px;
+  border: 1px solid #000000; /*cor da caixa de comentário*/
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  align-items: center;
+  font-family: inherit;
+  color: #050505;
+  font-weight: 600;
+  width: 40%;
+  background: #89be89;
+  border: 1px solid #4f7255;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #94d49e;
+  border-color: #050505;
+}
+/*centraliza o botão do formulário*/
+.form-container .form-submit-btn {
+  display: block;
+  margin: 8px auto 0; /* Centraliza horizontalmente */
+}
+.form-container {
+  width: 50%; /* Define uma largura para o formulário */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 20px;
+  background-color: #f7f7f7; /* Cor de fundo opcional */
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0px 4px 8px rgba(255, 251, 251, 0.1); /* Sombra para destaque */
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+/*centraliza o formulario*/
+.form-group input,
+.form-group textarea {
+  width: 10%; /* Faz os campos ocuparem toda a largura do container */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+/**/
+.form-submit-btn {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.info-especie {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center;  /* Garante que os textos também fiquem centralizados */
+}
+
+
